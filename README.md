@@ -23,4 +23,34 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
 Contact: JiamengLiu.PRC@gmail.com
 ```
 
-* InfanTSeg is designed to segment brain tissue in infants aged 0-24 months using an unified model. Enables longitudinally consistent tissue segmentation for charting early brain neurodevelopmental.
+## Framework
+<div style="text-align: center">
+  <img src="figure/framework.svg" width="90%" alt="InfanTSeg Framework">
+</div>
+
+
+In this work, we proposed a unified, spatially-accurate and longitudinally-consistent infant brain tissue segmentation framework, with assistance from coherent tissue edge maps.
+
+
+### Implementation Details
+Organize your data in the following format:
+
+* Organize the data in the following format
+    ```shell
+    Experiment # root folder
+    ├── csvfile # folder to save training list
+    │   └── file_list.csv # file list with following format [IDs, folder, fold], IDs: data name; folder: data center; fold: five fold cross-validation.
+    ├── data # folder to save training data
+    │   ├── BCP # data center folder
+    │   │   └── sub001 # Single subject folder
+    │   │       ├── brain_sober.nii.gz # Edge maps
+    │   │       ├── brain.nii.gz # Intensity image
+    │   │       └── tissue.nii.gz # GT tissue maps
+    │   ├── dHCP # data center folder
+    │   └── NDAR # data center folder
+    └── Results # folder to save checkpoint and log file
+        └── InfanTSeg # folder to save brain tissue segmentation results and checkpoints
+            ├── checkpoints # folder to save checkpoint
+            ├── log # folder to save logging information
+            └── pred # folder to save results of validation set
+  ```
