@@ -1,23 +1,26 @@
 # Infant Brain Tissue Segmentation (InfanTSeg)
-Repo for infant brain tissue segmentation aged 0-2 years old
+Repo for brain tissue segmentation for infant aged 0-24 months old
 
 
-> "InfanTSeg: Anatomy-guided Infant Brain Tissue Segmentation via Attention-driven Surrounding-aware Segmentation Network"
+> "InfanTSeg: A Unified Framework for Infant Brain Tissue Segmentation with Coherent Anatomical Guidance", [Jiameng Liu, Feihong Liu, Kaicong Sun, Jiawei Huang, Yuhang Sun, Han Zhang, Feng Shi, Islem Rekik, Dinggang Shen]
+> 
+> Previously Accepted by _**MICCAI**_ 2024
+> 
+> "[UinTSeg: Unified Infant Brain Tissue Segmentation with Anatomy Delineation](https://link.springer.com/chapter/10.1007/978-3-031-72069-7_46)", _**MICCAI**_ 2024, [Jiameng Liu, Feihong Liu, Kaicong Sun, Yuhang Sun, Jiawei Huang, Caiwen Jiang, Islem Rekik, Dinggang Shen]
 
 
 
 ## [<font color=#F8B48F size=3>License</font> ](./LICENSE)
 ```
-Copyright IDEA Lab, School of Biomedical Engineering, ShanghaiTech University, Shanghai, China
+Copyright (c) IDEA Lab, School of Biomedical Engineering, ShanghaiTech. Shanghai, China
 
-Licensed under the the GPL (General Public License);
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
+Permission is granted to any individual or organization to use this software for non-commercial purposes only, without modification.
 
-    http://www.apache.org/licenses/LICENSE-2.0
+Commercial use, modification, redistribution, or derivative works are NOT permitted without explicit written permission from the author.
 
-Repo for Unified Infant Brain Tissue Segmentation
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
+
 Contact: JiamengLiu.PRC@gmail.com
 ```
 
-* InfanTSeg is designed to segment brain tissues in infants aged 0-24 months using an unified model. Enables longitudinally consistent tissue segmentation for charting early brain neurodevelopmental.
+* InfanTSeg is designed to segment brain tissue in infants aged 0-24 months using an unified model. Enables longitudinally consistent tissue segmentation for charting early brain neurodevelopmental.
